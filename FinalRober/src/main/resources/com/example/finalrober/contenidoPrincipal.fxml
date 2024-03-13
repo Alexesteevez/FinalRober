@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="anchorPanePrincipal" prefHeight="556.0" prefWidth="737.0" style="-fx-background-color: #2C2C2C;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalrober.ContenidoPrincipal">
+   <children>
+       <Pane layoutX="540.0" layoutY="153.0" prefHeight="55.0" prefWidth="183.0" style="-fx-background-color: linear-gradient(to right, #8384F8, #A6A7F6); -fx-background-radius: 10px;">
+         <children>
+            <Label layoutX="120.0" layoutY="19.0" text="Total" textFill="WHITE" />
+            <Label fx:id="lbTotal" layoutX="43.0" layoutY="19.0" prefHeight="17.0" prefWidth="50.0" text="0" textFill="WHITE" />
+            <ImageView fitHeight="55.0" fitWidth="26.0" layoutX="8.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/img_6.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="540.0" layoutY="218.0" prefHeight="55.0" prefWidth="183.0" style="-fx-background-color: linear-gradient(to right, #96C9D1, #B2D8DE); -fx-background-radius: 10px;">
+         <children>
+            <Label layoutX="105.0" layoutY="20.0" text="En Progreso" textFill="WHITE" />
+            <ImageView fitHeight="55.0" fitWidth="26.0" layoutX="8.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/img_7.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbEnProgreso" layoutX="43.0" layoutY="19.0" prefHeight="17.0" prefWidth="50.0" text="200" textFill="WHITE" />
+         </children></Pane>
+      <Pane layoutX="540.0" layoutY="283.0" prefHeight="55.0" prefWidth="183.0" style="-fx-background-color: linear-gradient(to right, #FB958D, #FDB9B4); -fx-background-radius: 10px;">
+         <children>
+            <Label layoutX="115.0" layoutY="20.0" text="Pendiente" textFill="WHITE" />
+            <ImageView fitHeight="55.0" fitWidth="26.0" layoutX="8.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/img_5.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbPendiente" layoutX="43.0" layoutY="19.0" prefHeight="17.0" prefWidth="50.0" text="300" textFill="WHITE" />
+         </children></Pane>
+      <Pane layoutX="540.0" layoutY="348.0" prefHeight="55.0" prefWidth="183.0" style="-fx-background-color: linear-gradient(to right, #87ECAF, #B3FACF); -fx-background-radius: 10px;">
+         <children>
+            <Label layoutX="112.0" layoutY="20.0" text="Completas" textFill="WHITE" />
+            <ImageView fitHeight="55.0" fitWidth="26.0" layoutX="8.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/img_4.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbCompletas" layoutX="43.0" layoutY="19.0" prefHeight="17.0" prefWidth="50.0" text="123" textFill="WHITE" />
+         </children></Pane>
+      <Pane layoutX="32.0" layoutY="97.0" prefHeight="405.0" prefWidth="462.0" style="-fx-background-color: WHITE; -fx-border-radius: 10px;">
+         <children>
+            <PieChart fx:id="pieChart" onDragDetected="#initialize" prefHeight="405.0" prefWidth="462.0" />
+         </children>
+      </Pane>
+
+   </children>
+</AnchorPane>

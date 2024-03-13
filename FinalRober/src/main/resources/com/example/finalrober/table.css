@@ -1,0 +1,20 @@
+.table-view .column-header-background {
+    -fx-background-color: #009EDB; /* Cambia el color del encabezado de las columnas */
+    -fx-text-fill: white; /* Color del texto del encabezado de la columna */
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #E6E6E6; /* Color de fondo de las filas impares */
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #009EDB; /* Color de fondo de las filas seleccionadas */
+    -fx-text-fill: white; /* Color del texto de las filas seleccionadas */
+}
+
+/* Cambiar el color de fondo de la columna Estado */
+.table-view .table-cell:filled:selected {
+    -fx-background-color: #FF5733; /* Color de fondo rojo */
+}
+
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneTareas" prefHeight="556.0" prefWidth="737.0" style="-fx-background-color: #2C2C2C;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalrober.Nuevo">
+   <children>
+      <Label fx:id="lbTitulo" layoutX="20.0" layoutY="24.0" text="Título" textFill="WHITE">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbCategoria" layoutX="20.0" layoutY="90.0" text="Categoría" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbFecha" layoutX="20.0" layoutY="135.0" text="Fecha" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbEstado" layoutX="20.0" layoutY="180.0" text="Estado" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablaTareas" layoutX="385.0" layoutY="33.0" prefHeight="483.0" prefWidth="333.0">
+        <columns>
+          <TableColumn fx:id="colTareas" prefWidth="332.0" text="Tareas" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfNombreTarea" alignment="TOP_LEFT" layoutX="27.0" layoutY="315.0" onAction="#guardarNombreTarea" prefHeight="25.0" prefWidth="333.0" />
+      <Label layoutX="136.0" layoutY="288.0" text="Nombre Tarea" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAnadirTarea" layoutX="28.0" layoutY="350.0" mnemonicParsing="false" onAction="#guardarNombreTarea" prefHeight="30.0" prefWidth="333.0" style="-fx-background-color: #009EDB;" text="Añadir" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAnadirTarea1" layoutX="28.0" layoutY="391.0" mnemonicParsing="false" onAction="#salir" prefHeight="30.0" prefWidth="333.0" style="-fx-background-color: #009EDB;" text="Salir" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
